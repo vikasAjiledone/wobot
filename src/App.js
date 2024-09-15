@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CameraTable from './component/CameraTable'
+import Logo from './image/logo_wobot.webp'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg_color'>
+    <div className='wobot_img'>
+      <img src={Logo} alt="" />
     </div>
-  );
+       <CameraTable/>
+    </div>
+  )
 }
 
-export default App;
+export default App
